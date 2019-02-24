@@ -23,5 +23,19 @@ namespace CalculatorWebAPI.Services
             return result;
         }
 
+        public float multiply(float a, float b)
+        {
+            var result = a * b;
+
+            return result;
+        }
+
+        public float divide(float a, float b)
+        {
+            var result = a / b;
+
+            return result;
+        }
+
     }
 }

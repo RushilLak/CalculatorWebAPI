@@ -39,5 +39,23 @@ namespace CalculatorWebAPI.Controllers
 
             return result;
         }
+
+        [HttpPost]
+        [Route("Multiply/{a:float}/{b:float}")]
+        public ActionResult<float> MultiplyElements(float a, float b)
+        {
+            var result = _services.multiply(a, b);
+
+            return result;
+        }
+
+        [HttpPost]
+        [Route("Divide/{a:float}/{b:float}")]
+        public ActionResult<float> DivideElements(float a, float b)
+        {
+            var result = _services.divide(a, b);
+
+            return result;
+        }
     }
 }
