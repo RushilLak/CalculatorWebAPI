@@ -30,7 +30,7 @@ namespace CalculatorAPI.Tests
             var response = _controller.SumElements(testItem);
 
             // Assert
-            Assert.Equal(32, response);
+            Assert.Equal(32, response.Value);
         }
 
         [Fact]
@@ -47,7 +47,7 @@ namespace CalculatorAPI.Tests
             var response = _controller.SubstractElements(testItem);
 
             // Assert
-            Assert.Equal(12, response);
+            Assert.Equal(12, response.Value);
         }
 
         [Fact]
@@ -64,7 +64,7 @@ namespace CalculatorAPI.Tests
             var response = _controller.MultiplyElements(testItem);
 
             // Assert
-            Assert.Equal(220, response);
+            Assert.Equal(220, response.Value);
         }
 
         [Fact]
@@ -81,7 +81,7 @@ namespace CalculatorAPI.Tests
             var response = _controller.DivideElements(testItem);
 
             // Assert
-            Assert.Equal(2.2f, response);
+            Assert.Equal(2.2f, response.Value);
         }
     }
 }
