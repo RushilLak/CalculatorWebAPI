@@ -23,8 +23,8 @@ namespace CalculatorWebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("Sum")]
-        public ActionResult<float> SumElements(CalculatorItem a, CalculatorItem b)
+        [Route("Sum/{a:float}/{b:float}")]
+        public ActionResult<float> SumElements(float a, float b)
         {
             var result = _services.sum(a, b);
 
@@ -32,8 +32,8 @@ namespace CalculatorWebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("Substract")]
-        public ActionResult<float> SubstractElements(CalculatorItem a, CalculatorItem b)
+        [Route("Substract/{a:float}/{b:float}")]
+        public ActionResult<float> SubstractElements(float a, float b)
         {
             var result = _services.substract(a, b);
 
