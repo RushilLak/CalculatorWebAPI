@@ -19,7 +19,7 @@ namespace CalculatorWebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("Sum/{a:float}/{b:float}")]
+        [Route("Sum")]
         public ActionResult<float> SumElements(CalculatorItem number)
         {
             var result = _services.sum(number);
@@ -28,7 +28,7 @@ namespace CalculatorWebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("Substract/{a:float}/{b:float}")]
+        [Route("Substract")]
         public ActionResult<float> SubstractElements(CalculatorItem number)
         {
             var result = _services.substract(number);
@@ -37,7 +37,7 @@ namespace CalculatorWebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("Multiply/{a:float}/{b:float}")]
+        [Route("Multiply")]
         public ActionResult<float> MultiplyElements(CalculatorItem number)
         {
             var result = _services.multiply(number);
@@ -46,7 +46,7 @@ namespace CalculatorWebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("Divide/{a:float}/{b:float}")]
+        [Route("Divide")]
         public ActionResult<float> DivideElements(CalculatorItem number)
         {
             var result = _services.divide(number);
