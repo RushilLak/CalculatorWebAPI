@@ -11,7 +11,7 @@ namespace CalculatorWebAPI.Services
     
         public float sum(CalculatorItem a, CalculatorItem b)
         {
-            var result = a.Number - b.Number;
+            var result = a.Number + b.Number;
 
             return result;
         }
