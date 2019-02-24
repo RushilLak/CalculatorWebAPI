@@ -9,16 +9,16 @@ namespace CalculatorWebAPI.Services
     public class CalculatorService: ICalculator
     {
     
-        public float sum(CalculatorItem a)
+        public float sum(CalculatorItem a, CalculatorItem b)
         {
-            var result = a.Number + a.Number;
+            var result = a.Number - b.Number;
 
             return result;
         }
 
-        public float substract(CalculatorItem a)
+        public float substract(CalculatorItem a, CalculatorItem b)
         {
-            var result = a.Number - a.Number;
+            var result = a.Number - b.Number;
 
             return result;
         }

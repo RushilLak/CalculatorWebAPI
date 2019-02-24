@@ -24,18 +24,18 @@ namespace CalculatorWebAPI.Controllers
 
         [HttpPost]
         [Route("Sum")]
-        public ActionResult<float> SumElements(CalculatorItem a)
+        public ActionResult<float> SumElements(CalculatorItem a, CalculatorItem b)
         {
-            var result = _services.sum(a);
+            var result = _services.sum(a, b);
 
             return result;
         }
 
         [HttpPost]
         [Route("Substract")]
-        public ActionResult<float> SubstractElements(CalculatorItem a)
+        public ActionResult<float> SubstractElements(CalculatorItem a, CalculatorItem b)
         {
-            var result = _services.substract(a);
+            var result = _services.substract(a, b);
 
             return result;
         }

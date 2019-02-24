@@ -8,7 +8,7 @@ namespace CalculatorWebAPI.Services
 {
     public interface ICalculator
     {
-        float sum(CalculatorItem a);
-        float substract(CalculatorItem a);
+        float sum(CalculatorItem a, CalculatorItem b);
+        float substract(CalculatorItem a, CalculatorItem b);
     }
 }
